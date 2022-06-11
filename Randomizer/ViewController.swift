@@ -9,15 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
     @IBOutlet var userNameTextField: UITextField!
-    
     @IBOutlet var passwordTF: UITextField!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         userNameTextField.delegate = self
         passwordTF.delegate = self
@@ -37,9 +33,7 @@ class ViewController: UIViewController {
             passwordTF.text = ""
         }
     }
-    @IBAction func actionButton() {
-        view.endEditing(true)
-    }
+    
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -48,7 +42,6 @@ class ViewController: UIViewController {
         prepareToLoad()
     }
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        guard let greetingVC = segue.source as? GreetingViewController else {return}
         userNameTextField.text = ""
         passwordTF.text = ""
         
@@ -57,12 +50,13 @@ class ViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.endEditing(true)
             super .touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
        
     
     @IBAction func LoginButtonPressed() {
+        
     }
     
     @IBAction func ForgotNameButtonPressed() {
