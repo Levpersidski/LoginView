@@ -30,6 +30,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Qw5-ab-bcX"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Qsc-0W-f5w">
                                                 <rect key="frame" x="0.0" y="65" width="247" height="34"/>
@@ -39,6 +42,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="rpv-sM-WgE"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Koj-Ka-QfB">
                                                 <rect key="frame" x="81.5" y="130" width="84" height="44"/>
@@ -65,7 +71,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?"/>
                                                 <connections>
-                                                    <action selector="ForgotNameButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="FiS-nS-12a"/>
+                                                    <action selector="ForgotUserNameButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="zWU-0R-Ni9"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyA-JE-rcc">
@@ -77,7 +83,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?" titleAlignment="automatic"/>
                                                 <connections>
-                                                    <action selector="ForgotPasswordButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ty-vi-uWn"/>
+                                                    <action selector="ForgotPasswordbutton" destination="BYZ-38-t0r" eventType="touchUpInside" id="aaz-Fd-KWb"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -94,8 +100,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="passwordTF" destination="Qsc-0W-f5w" id="U2I-Q2-ADn"/>
-                        <outlet property="userNameTextField" destination="CSS-mp-boo" id="gMq-HE-RLh"/>
+                        <outlet property="passwordTF" destination="Qsc-0W-f5w" id="C3K-PZ-YxT"/>
+                        <outlet property="userNameTextField" destination="CSS-mp-boo" id="kuz-wd-Gml"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
