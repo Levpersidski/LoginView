@@ -20,7 +20,8 @@ class GreetingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeLabel.text = "welcome, \(user)!"
+        let user = User.getPerson()
+        welcomeLabel.text = "Welcome, \(user.name) \(user.surname) 🤘"
         createdGradient()
     }
     

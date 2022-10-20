@@ -40,7 +40,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func ForgotPasswordbutton() {
         showAlert(title: "Oops!", message: "Your password is \(password)")
-        passwordTF.text = ""
+        
     }
 
     @IBAction func unwind(for segue: UIStoryboardSegue) {
@@ -50,6 +50,7 @@ class LoginViewController: UIViewController {
     }
 
 // MARK: - Private Methods
+// MARK: - Alert Controller
 extension LoginViewController{
     private func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -58,10 +59,11 @@ extension LoginViewController{
         }
         alert.addAction(okAction)
         present(alert, animated: true)
+        passwordTF.text = ""
     }
 }
 
-    // MARK: - Alert Controller
+// MARK: - UItextFieldDelegate
     extension LoginViewController: UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             super .touchesBegan(touches, with: event)

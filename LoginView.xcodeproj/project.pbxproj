@@ -14,10 +14,12 @@
 		B640FB53284A8B3500BE5E0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B640FB52284A8B3500BE5E0B /* Assets.xcassets */; };
 		B640FB56284A8B3500BE5E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B640FB54284A8B3500BE5E0B /* LaunchScreen.storyboard */; };
 		B640FB60284E0B1700BE5E0B /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640FB5F284E0B1700BE5E0B /* GreetingViewController.swift */; };
+		B6893BA22901219300D037A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6893BA12901219300D037A3 /* User.swift */; };
+		B6893BA82901503100D037A3 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6893BA72901503100D037A3 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B640FB46284A8B3500BE5E0B /* Randomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Randomizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B640FB46284A8B3500BE5E0B /* LoginView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B640FB49284A8B3500BE5E0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B640FB4B284A8B3500BE5E0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B640FB4D284A8B3500BE5E0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		B640FB55284A8B3500BE5E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B640FB57284A8B3500BE5E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B640FB5F284E0B1700BE5E0B /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
+		B6893BA12901219300D037A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B6893BA72901503100D037A3 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,8 +46,7 @@
 		B640FB3D284A8B3400BE5E0B = {
 			isa = PBXGroup;
 			children = (
-				B640FB5F284E0B1700BE5E0B /* GreetingViewController.swift */,
-				B640FB48284A8B3500BE5E0B /* Randomizer */,
+				B640FB48284A8B3500BE5E0B /* LoginView */,
 				B640FB47284A8B3500BE5E0B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,31 +54,74 @@
 		B640FB47284A8B3500BE5E0B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B640FB46284A8B3500BE5E0B /* Randomizer.app */,
+				B640FB46284A8B3500BE5E0B /* LoginView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B640FB48284A8B3500BE5E0B /* Randomizer */ = {
+		B640FB48284A8B3500BE5E0B /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				B6893BA02901211800D037A3 /* Models */,
+				B6893BA3290128A200D037A3 /* ViewControllers */,
+				B6893BA52901290800D037A3 /* StoryBoards */,
+				B6893BA62901293600D037A3 /* Resources */,
+				B6893BA4290128E300D037A3 /* App */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		B6893BA02901211800D037A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B6893BA12901219300D037A3 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B6893BA3290128A200D037A3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B640FB5F284E0B1700BE5E0B /* GreetingViewController.swift */,
+				B6893BA72901503100D037A3 /* InfoViewController.swift */,
+				B640FB4D284A8B3500BE5E0B /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B6893BA4290128E300D037A3 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				B640FB49284A8B3500BE5E0B /* AppDelegate.swift */,
 				B640FB4B284A8B3500BE5E0B /* SceneDelegate.swift */,
-				B640FB4D284A8B3500BE5E0B /* ViewController.swift */,
-				B640FB4F284A8B3500BE5E0B /* Main.storyboard */,
-				B640FB52284A8B3500BE5E0B /* Assets.xcassets */,
-				B640FB54284A8B3500BE5E0B /* LaunchScreen.storyboard */,
 				B640FB57284A8B3500BE5E0B /* Info.plist */,
 			);
-			path = Randomizer;
+			path = App;
+			sourceTree = "<group>";
+		};
+		B6893BA52901290800D037A3 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				B640FB4F284A8B3500BE5E0B /* Main.storyboard */,
+				B640FB54284A8B3500BE5E0B /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		B6893BA62901293600D037A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B640FB52284A8B3500BE5E0B /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B640FB45284A8B3500BE5E0B /* Randomizer */ = {
+		B640FB45284A8B3500BE5E0B /* LoginView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B640FB5A284A8B3500BE5E0B /* Build configuration list for PBXNativeTarget "Randomizer" */;
+			buildConfigurationList = B640FB5A284A8B3500BE5E0B /* Build configuration list for PBXNativeTarget "LoginView" */;
 			buildPhases = (
 				B640FB42284A8B3500BE5E0B /* Sources */,
 				B640FB43284A8B3500BE5E0B /* Frameworks */,
@@ -85,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = Randomizer;
+			name = LoginView;
 			productName = Randomizer;
-			productReference = B640FB46284A8B3500BE5E0B /* Randomizer.app */;
+			productReference = B640FB46284A8B3500BE5E0B /* LoginView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +151,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B640FB41284A8B3400BE5E0B /* Build configuration list for PBXProject "Randomizer" */;
+			buildConfigurationList = B640FB41284A8B3400BE5E0B /* Build configuration list for PBXProject "LoginView" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +164,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B640FB45284A8B3500BE5E0B /* Randomizer */,
+				B640FB45284A8B3500BE5E0B /* LoginView */,
 			);
 		};
 /* End PBXProject section */
@@ -144,6 +190,8 @@
 				B640FB4E284A8B3500BE5E0B /* ViewController.swift in Sources */,
 				B640FB4A284A8B3500BE5E0B /* AppDelegate.swift in Sources */,
 				B640FB4C284A8B3500BE5E0B /* SceneDelegate.swift in Sources */,
+				B6893BA22901219300D037A3 /* User.swift in Sources */,
+				B6893BA82901503100D037A3 /* InfoViewController.swift in Sources */,
 				B640FB60284E0B1700BE5E0B /* GreetingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +343,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F7X8B5584B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Randomizer/Info.plist;
+				INFOPLIST_FILE = LoginView/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LoginView;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -311,7 +359,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,7 +372,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F7X8B5584B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Randomizer/Info.plist;
+				INFOPLIST_FILE = LoginView/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LoginView;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -340,14 +388,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B640FB41284A8B3400BE5E0B /* Build configuration list for PBXProject "Randomizer" */ = {
+		B640FB41284A8B3400BE5E0B /* Build configuration list for PBXProject "LoginView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B640FB58284A8B3500BE5E0B /* Debug */,
@@ -356,7 +404,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B640FB5A284A8B3500BE5E0B /* Build configuration list for PBXNativeTarget "Randomizer" */ = {
+		B640FB5A284A8B3500BE5E0B /* Build configuration list for PBXNativeTarget "LoginView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B640FB5B284A8B3500BE5E0B /* Debug */,
