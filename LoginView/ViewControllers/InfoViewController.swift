@@ -21,10 +21,15 @@ class InfoViewController: UIViewController {
         infoLabel.text = user.description
         
         mySelfImage.image = UIImage(named: "Me")
+       
+       
         
         // Do any additional setup after loading the view.
     }
-    
+    override func viewWillLayoutSubviews() {
+        mySelfImage.layer.cornerRadius = mySelfImage.frame.size.width / 2
+        mySelfImage.clipsToBounds = true
+    }
 
     /*
     // MARK: - Navigation

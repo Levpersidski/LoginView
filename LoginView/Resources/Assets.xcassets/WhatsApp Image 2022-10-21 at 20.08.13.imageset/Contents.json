@@ -1,7 +1,6 @@
 {
   "images" : [
     {
-      "filename" : "WhatsApp Image 2022-10-20 at 19.20.34.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -14,6 +13,7 @@
       "scale" : "3x"
     },
     {
+      "filename" : "WhatsApp Image 2022-10-21 at 20.08.13.jpeg",
       "idiom" : "iphone",
       "scale" : "1x"
     },
