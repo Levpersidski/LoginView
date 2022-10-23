@@ -14,19 +14,22 @@ class LoginViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     
     // MARK: - Private properties
-    private let user = "Master"
-    private let password = "Bombaster"
+   
+    let person = User.getPerson()
+    private lazy var user = User(person: person)
+    
+    
     
     // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        guard let greetingVC = segue.destination as? GreetingViewController else {return}
-        greetingVC.user = user
+        greetingVC.user = user.person.name
         
     }
     
     // MARK: IBActions
     @IBAction func LoginButtonPressed() {
-        if userNameTextField.text != "Master" || passwordTF.text != "Bombaster" {
+        if userNameTextField.text != user.login || passwordTF.text != user.password {
             showAlert(title: "Invalid Login or Password",
             message: "If you can't remember, Pls use hints")
         }
@@ -35,11 +38,11 @@ class LoginViewController: UIViewController {
 
 
 @IBAction func ForgotUserNameButton() {
-        showAlert(title: "Oops!", message: "Your name is \(user)")
+    showAlert(title: "Oops!", message: "Your name is \(user.login)")
     }
     
     @IBAction func ForgotPasswordbutton() {
-        showAlert(title: "Oops!", message: "Your password is \(password)")
+        showAlert(title: "Oops!", message: "Your password is \(user.password)")
         
     }
 
