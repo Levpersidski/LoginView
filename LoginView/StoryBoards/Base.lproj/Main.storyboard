@@ -213,10 +213,10 @@
             </objects>
             <point key="canvasLocation" x="860.625" y="1555.9859154929577"/>
         </scene>
-        <!--View Controller-->
+        <!--About Me View Controller-->
         <scene sceneID="Joq-IX-BHh">
             <objects>
-                <viewController id="SRk-gJ-DoG" sceneMemberID="viewController">
+                <viewController id="SRk-gJ-DoG" customClass="AboutMeViewController" customModule="LoginView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pcc-Lf-wwH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,7 +226,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Nz-6H-49X">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="297"/>
-                                        <string key="text">Всем привет! Меня зовут Роман. Мне 34 года, я живу в Тайланде. На солнечном острове Пхукет. Занимаюсь разработкой сайтов на Тильде. В данный момент обучаюсь разработке приложений на Swift'е, в самой крутой школе &lt;Swiftbook&gt;. Так же занимаюсь сьемкой ресторанных блюд. Мечтаю перебраться в Америку</string>
+                                        <string key="text">Мне 34 года, я живу в Тайланде. На солнечном острове Пхукет. Занимаюсь разработкой сайтов на Тильде. В данный момент обучаюсь разработке приложений на Swift'е, в самой крутой школе &lt;Swiftbook&gt;. Так же заребраться в Америку</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" systemColor="systemTealColor"/>
                                         <nil key="highlightedColor"/>
@@ -246,7 +246,10 @@
                             <constraint firstItem="yDj-9q-M3j" firstAttribute="top" secondItem="iLr-bZ-0e9" secondAttribute="top" constant="20" id="z4a-b1-JIl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="TL9-8U-buv"/>
+                    <navigationItem key="navigationItem" id="TL9-8U-buv" customClass="A"/>
+                    <connections>
+                        <outlet property="fullDescriptionLogin" destination="9Nz-6H-49X" id="w5J-dR-5qP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Edj-9J-lkC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -293,10 +296,10 @@
             </objects>
             <point key="canvasLocation" x="862" y="838"/>
         </scene>
-        <!--View Controller-->
+        <!--Sport View Controller-->
         <scene sceneID="Ayc-hp-6oQ">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="T2d-lJ-wr5" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="T2d-lJ-wr5" customClass="SportViewController" customModule="LoginView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R1s-7x-LPg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -373,10 +376,10 @@
             </objects>
             <point key="canvasLocation" x="2536.8000000000002" y="837.192118226601"/>
         </scene>
-        <!--View Controller-->
+        <!--Travel View Controller-->
         <scene sceneID="kfk-SU-an0">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="0fU-gd-jlo" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="0fU-gd-jlo" customClass="TravelViewController" customModule="LoginView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7wY-ah-zZS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

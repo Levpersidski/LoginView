@@ -15,15 +15,26 @@ class LoginViewController: UIViewController {
     
     // MARK: - Private properties
    
-    let person = User.getPerson()
-    private lazy var user = User(person: person)
+    private let user = User.getUser()
     
     
     
     // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       guard let greetingVC = segue.destination as? GreetingViewController else {return}
-        greetingVC.user = user.person.name
+       guard let tabBarController = segue.destination as? UITabBarController else {return}
+        guard let viewControllers = tabBarController.viewControllers else {return}
+        
+        for viewController in viewControllers {
+            if let greetingVC = viewController as? GreetingViewController {
+                greetingVC.user = user
+                
+                else if let navigationVC = viewController as? UINavigationController {
+                    let infoVC = navigationVC.topViewController as! InfoViewController
+                    infoVC.user = user
+                }
+                
+            }
+        }
         
     }
     

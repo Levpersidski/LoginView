@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6330E832906C6FA00827E45 /* SportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6330E822906C6FA00827E45 /* SportViewController.swift */; };
+		B6330E852906C72B00827E45 /* TravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6330E842906C72B00827E45 /* TravelViewController.swift */; };
+		B6330E872906D08000827E45 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6330E862906D08000827E45 /* AboutMeViewController.swift */; };
 		B640FB4A284A8B3500BE5E0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640FB49284A8B3500BE5E0B /* AppDelegate.swift */; };
 		B640FB4C284A8B3500BE5E0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640FB4B284A8B3500BE5E0B /* SceneDelegate.swift */; };
-		B640FB4E284A8B3500BE5E0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640FB4D284A8B3500BE5E0B /* ViewController.swift */; };
+		B640FB4E284A8B3500BE5E0B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640FB4D284A8B3500BE5E0B /* LoginViewController.swift */; };
 		B640FB51284A8B3500BE5E0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B640FB4F284A8B3500BE5E0B /* Main.storyboard */; };
 		B640FB53284A8B3500BE5E0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B640FB52284A8B3500BE5E0B /* Assets.xcassets */; };
 		B640FB56284A8B3500BE5E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B640FB54284A8B3500BE5E0B /* LaunchScreen.storyboard */; };
@@ -19,10 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6330E822906C6FA00827E45 /* SportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportViewController.swift; sourceTree = "<group>"; };
+		B6330E842906C72B00827E45 /* TravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelViewController.swift; sourceTree = "<group>"; };
+		B6330E862906D08000827E45 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		B640FB46284A8B3500BE5E0B /* LoginView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B640FB49284A8B3500BE5E0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B640FB4B284A8B3500BE5E0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B640FB4D284A8B3500BE5E0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B640FB4D284A8B3500BE5E0B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B640FB50284A8B3500BE5E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B640FB52284A8B3500BE5E0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B640FB55284A8B3500BE5E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,7 +90,10 @@
 			children = (
 				B640FB5F284E0B1700BE5E0B /* GreetingViewController.swift */,
 				B6893BA72901503100D037A3 /* InfoViewController.swift */,
-				B640FB4D284A8B3500BE5E0B /* ViewController.swift */,
+				B640FB4D284A8B3500BE5E0B /* LoginViewController.swift */,
+				B6330E822906C6FA00827E45 /* SportViewController.swift */,
+				B6330E842906C72B00827E45 /* TravelViewController.swift */,
+				B6330E862906D08000827E45 /* AboutMeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -187,12 +196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B640FB4E284A8B3500BE5E0B /* ViewController.swift in Sources */,
+				B640FB4E284A8B3500BE5E0B /* LoginViewController.swift in Sources */,
 				B640FB4A284A8B3500BE5E0B /* AppDelegate.swift in Sources */,
+				B6330E852906C72B00827E45 /* TravelViewController.swift in Sources */,
 				B640FB4C284A8B3500BE5E0B /* SceneDelegate.swift in Sources */,
 				B6893BA22901219300D037A3 /* User.swift in Sources */,
 				B6893BA82901503100D037A3 /* InfoViewController.swift in Sources */,
 				B640FB60284E0B1700BE5E0B /* GreetingViewController.swift in Sources */,
+				B6330E872906D08000827E45 /* AboutMeViewController.swift in Sources */,
+				B6330E832906C6FA00827E45 /* SportViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

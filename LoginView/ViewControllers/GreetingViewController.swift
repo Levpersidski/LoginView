@@ -14,14 +14,13 @@ class GreetingViewController: UIViewController {
     
     @IBOutlet var welcomeLabel: UILabel!
     
-    var user = ""
+    var user: User!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let user = User.getPerson()
-        welcomeLabel.text = "Welcome, \(user.name) \(user.surname) 🤘"
+        welcomeLabel.text = "Welcome,\(user.person.fullName)!"
         createdGradient()
     }
     

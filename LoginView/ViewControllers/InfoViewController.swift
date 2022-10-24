@@ -13,32 +13,26 @@ class InfoViewController: UIViewController {
     
     @IBOutlet var mySelfImage: UIImageView!
     
+    var user: User!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let user = User.getPerson()
-        self.title = "\(user.name) \(user.surname)"
-        infoLabel.text = user.description
-        
+        title = user.person.fullName
+        infoLabel.text = ""
         mySelfImage.image = UIImage(named: "Me")
        
        
         
-        // Do any additional setup after loading the view.
+       
     }
     override func viewWillLayoutSubviews() {
         mySelfImage.layer.cornerRadius = mySelfImage.frame.size.width / 2
         mySelfImage.clipsToBounds = true
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+       guard let aboutMeVC = segue.destination as? AboutMeViewController else {return}
+        aboutMeVC.fullDescriptionLogin.user.person.fullDescription
     }
-    */
-
+  
 }
