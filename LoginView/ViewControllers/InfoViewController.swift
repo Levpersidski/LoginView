@@ -10,7 +10,6 @@ import UIKit
 class InfoViewController: UIViewController {
 
     @IBOutlet var infoLabel: UILabel!
-    
     @IBOutlet var mySelfImage: UIImageView!
     
     var user: User!
@@ -19,8 +18,8 @@ class InfoViewController: UIViewController {
         super.viewDidLoad()
         
         title = user.person.fullName
-        infoLabel.text = ""
-        mySelfImage.image = UIImage(named: "Me")
+        infoLabel.text = user.person.description
+        mySelfImage.image = UIImage(named: user.person.anotherImage.first ?? "")
        
        
         
@@ -32,7 +31,7 @@ class InfoViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        guard let aboutMeVC = segue.destination as? AboutMeViewController else {return}
-        aboutMeVC.fullDescriptionLogin.user.person.fullDescription
+        aboutMeVC.user = user.person
     }
   
 }

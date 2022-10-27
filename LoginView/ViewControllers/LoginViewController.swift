@@ -26,17 +26,27 @@ class LoginViewController: UIViewController {
         
         for viewController in viewControllers {
             if let greetingVC = viewController as? GreetingViewController {
-                greetingVC.user = user
+                greetingVC.user = user }
                 
-                else if let navigationVC = viewController as? UINavigationController {
-                    let infoVC = navigationVC.topViewController as! InfoViewController
+            else if let navigationVC = viewController as? UINavigationController {
+                if let infoVC = navigationVC.topViewController as? InfoViewController {
+                infoVC.user = user
+            
+                } else if let sportVC = navigationVC.topViewController as? SportViewController  {
+                    sportVC.sportImage = user.person
+                    
+                } else if let travelVC = navigationVC.topViewController as? TravelViewController {
+                    travelVC.travelImage = user.person
+                    
+                } else if let infoVC = navigationVC.topViewController as? InfoViewController {
                     infoVC.user = user
                 }
-                
             }
         }
-        
     }
+
+
+    
     
     // MARK: IBActions
     @IBAction func LoginButtonPressed() {

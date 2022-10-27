@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="Xeo-FA-mgM">
-                                <rect key="frame" x="16" y="174" width="374" height="246"/>
+                                <rect key="frame" x="16" y="174" width="343" height="246"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="edA-R5-PPh">
-                                        <rect key="frame" x="63.666666666666686" y="0.0" width="247" height="174"/>
+                                        <rect key="frame" x="48" y="0.0" width="247" height="174"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CSS-mp-boo">
                                                 <rect key="frame" x="0.0" y="0.0" width="247" height="34"/>
@@ -59,14 +59,13 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="pAn-1p-mhC">
-                                        <rect key="frame" x="0.0" y="210" width="374" height="36"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="pAn-1p-mhC">
+                                        <rect key="frame" x="2.3333333333333428" y="210" width="338.66666666666663" height="36"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dK0-Dv-vQb">
-                                                <rect key="frame" x="0.0" y="0.0" width="156" height="36"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="149.33333333333334" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="0nQ-7z-o0J"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="mJm-Hv-25o"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?"/>
@@ -75,11 +74,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyA-JE-rcc">
-                                                <rect key="frame" x="218" y="0.0" width="156" height="36"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="jO7-BM-MjL"/>
-                                                    <constraint firstAttribute="height" constant="36" id="xAb-mL-chd"/>
-                                                </constraints>
+                                                <rect key="frame" x="189.33333333333331" y="0.0" width="149.33333333333331" height="36"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?" titleAlignment="automatic"/>
                                                 <connections>
@@ -248,6 +243,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="TL9-8U-buv" customClass="A"/>
                     <connections>
+                        <outlet property="americaImage" destination="sfg-0L-AEm" id="cE6-ow-hmZ"/>
                         <outlet property="fullDescriptionLogin" destination="9Nz-6H-49X" id="w5J-dR-5qP"/>
                     </connections>
                 </viewController>
@@ -318,7 +314,7 @@
                                                     <color key="baseForegroundColor" systemColor="tintColor"/>
                                                 </buttonConfiguration>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Fit" translatesAutoresizingMaskIntoConstraints="NO" id="VtH-cu-SWA">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="VtH-cu-SWA">
                                                 <rect key="frame" x="0.0" y="36.333333333333329" width="335" height="173.33333333333337"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -338,7 +334,7 @@
                                                     <fontDescription key="titleFontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="17"/>
                                                 </buttonConfiguration>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Snowboard" translatesAutoresizingMaskIntoConstraints="NO" id="6Ns-Oh-794">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="6Ns-Oh-794">
                                                 <rect key="frame" x="0.0" y="38" width="335" height="171.66666666666666"/>
                                             </imageView>
                                         </subviews>
@@ -353,7 +349,7 @@
                                                     <fontDescription key="titleFontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="17"/>
                                                 </buttonConfiguration>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="WhatsApp Image 2022-10-21 at 19.46.40" translatesAutoresizingMaskIntoConstraints="NO" id="2fx-eg-VfN">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="2fx-eg-VfN">
                                                 <rect key="frame" x="0.0" y="38.000000000000057" width="335" height="171.66666666666666"/>
                                             </imageView>
                                         </subviews>
@@ -371,6 +367,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NSP-yJ-6eD"/>
+                    <connections>
+                        <outletCollection property="sportImageView" destination="VtH-cu-SWA" collectionClass="NSMutableArray" id="HpG-Q6-uCT"/>
+                        <outletCollection property="sportImageView" destination="6Ns-Oh-794" collectionClass="NSMutableArray" id="DPb-HO-JP6"/>
+                        <outletCollection property="sportImageView" destination="2fx-eg-VfN" collectionClass="NSMutableArray" id="GBv-QR-sNQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UTE-Is-Aib" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -398,7 +399,7 @@
                                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                                 </buttonConfiguration>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="WhatsApp Image 2022-10-21 at 20.08.13" translatesAutoresizingMaskIntoConstraints="NO" id="jYs-39-aqx">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="jYs-39-aqx">
                                                 <rect key="frame" x="0.0" y="39.333333333333329" width="335" height="170.33333333333337"/>
                                             </imageView>
                                         </subviews>
@@ -407,14 +408,14 @@
                                         <rect key="frame" x="0.0" y="211.66666666666669" width="335" height="209.66666666666669"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2k6-nM-1GZ">
-                                                <rect key="frame" x="78.000000000000014" y="0.0" width="179.33333333333337" height="36"/>
+                                                <rect key="frame" x="85.666666666666686" y="0.0" width="164" height="36"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Dominican 🇩🇴🐢">
+                                                <buttonConfiguration key="configuration" style="plain" title="Thailand 🇩🇴🐢">
                                                     <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                                 </buttonConfiguration>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="WhatsApp Image 2022-10-21 at 19.44.26" translatesAutoresizingMaskIntoConstraints="NO" id="B7M-vG-yEQ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="B7M-vG-yEQ">
                                                 <rect key="frame" x="0.0" y="41" width="335" height="168.66666666666666"/>
                                             </imageView>
                                         </subviews>
@@ -429,7 +430,7 @@
                                                     <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                                 </buttonConfiguration>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="WhatsApp Image 2022-10-21 at 20.06.48" translatesAutoresizingMaskIntoConstraints="NO" id="PU4-sL-imM">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="PU4-sL-imM">
                                                 <rect key="frame" x="0.0" y="41.000000000000057" width="335" height="168.66666666666666"/>
                                             </imageView>
                                         </subviews>
@@ -449,6 +450,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Tkq-7x-WmN"/>
+                    <connections>
+                        <outletCollection property="travelImageView" destination="jYs-39-aqx" collectionClass="NSMutableArray" id="XJH-L0-SdZ"/>
+                        <outletCollection property="travelImageView" destination="B7M-vG-yEQ" collectionClass="NSMutableArray" id="nFx-8o-qhb"/>
+                        <outletCollection property="travelImageView" destination="PU4-sL-imM" collectionClass="NSMutableArray" id="hlq-aV-u8g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q2q-WG-T1D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -495,12 +501,6 @@
     </scenes>
     <resources>
         <image name="400_250_thumb" width="400" height="250"/>
-        <image name="Fit" width="1600" height="1600"/>
-        <image name="Snowboard" width="972" height="1024"/>
-        <image name="WhatsApp Image 2022-10-21 at 19.44.26" width="1024" height="768"/>
-        <image name="WhatsApp Image 2022-10-21 at 19.46.40" width="1024" height="933"/>
-        <image name="WhatsApp Image 2022-10-21 at 20.06.48" width="1024" height="768"/>
-        <image name="WhatsApp Image 2022-10-21 at 20.08.13" width="768" height="1024"/>
         <image name="airplane.departure" catalog="system" width="128" height="83"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
