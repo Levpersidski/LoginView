@@ -10,8 +10,10 @@ import UIKit
 class InfoViewController: UIViewController {
 
     @IBOutlet var infoLabel: UILabel!
-    @IBOutlet var mySelfImage: UIImageView!
-    
+    @IBOutlet var mySelfImage: UIImageView! {
+        didSet { mySelfImage.layer.cornerRadius = mySelfImage.frame.height / 2
+    }
+    }
     var user: User!
     
     override func viewDidLoad() {
@@ -25,10 +27,7 @@ class InfoViewController: UIViewController {
         
        
     }
-    override func viewWillLayoutSubviews() {
-        mySelfImage.layer.cornerRadius = mySelfImage.frame.size.width / 2
-        mySelfImage.clipsToBounds = true
-    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        guard let aboutMeVC = segue.destination as? AboutMeViewController else {return}
         aboutMeVC.user = user.person

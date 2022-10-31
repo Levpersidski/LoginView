@@ -16,7 +16,7 @@ struct User {
              password: "Bombaster",
              person: Person.getPerson()
         )
-  
+  // данный метод возвращает экземпляр модели
         
     }
 }

@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
     
     // MARK: - Private properties
    
-    private let user = User.getUser()
+    private let user = User.getUser() // здесь мы создаем экземпляр модели и дальше мы работаем только с этим экземпляром потому что вызов этого метода всегда будет возвращать новый экземпляр
     
     
     
